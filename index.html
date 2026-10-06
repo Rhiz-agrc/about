@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>document.documentElement.classList.add('js');</script>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        #home,
+        #produk,
+        #tentang,
+        #kontak {
+            scroll-margin-top: 5.5rem;
+        }
         @keyframes hero-zoom {
             from { transform: scale(1); }
             to { transform: scale(1.08); }
@@ -111,6 +120,9 @@
             transform: translateY(0);
         }
         @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
             .hero-zoom,
             .hero-in,
             .js .reveal,
